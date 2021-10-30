@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import AppContentHome from "./components/AppContentHome";
 import AppContentDatabase from "./components/AppContentDatabase";
+import AppContentForm from "./components/AppContentForm";
 
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
                 <Switch>
                     <Route path={'/database'}>
                         <AppContentDatabase/>
+                    </Route>
+                    <Route path={'/form'}>
+                        <AppContentForm/>
                     </Route>
                     <Route path={'/'}>
                         <AppContentHome/>
