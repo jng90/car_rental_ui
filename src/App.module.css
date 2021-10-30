@@ -3,7 +3,8 @@
   --bg-color: #E6E6E6;
   --header-color: #D7CEB2;
   --header-menu-button-color: #BEB69F;
-  --header-menu-button-hover-color: #B2AA96
+  --header-menu-button-hover-color: #B2AA96;
+  --content-background-color: #CBC2A9;
 }
 body{
   /* Użycie zmiennej -> var(--nazwa) */
@@ -15,4 +16,10 @@ body{
   margin: auto;
   display: flex;
   flex-direction: column;
+}
+
+.AppContent {
+  background-color: var(--content-background-color);
+  margin-top: 5px;
+  min-height: 80vh;
 }

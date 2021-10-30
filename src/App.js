@@ -14,6 +14,7 @@ function App() {
         <div className={classes.App}>
             <Router>
                 <AppHeader/>
+                <div className={classes.AppContent}>
                 <Switch>
                     <Route path={'/database'}>
                         <AppContentDatabase/>
@@ -22,6 +23,7 @@ function App() {
                         <AppContentHome/>
                     </Route>
                 </Switch>
+                </div>
             </Router>
         </div>
     );

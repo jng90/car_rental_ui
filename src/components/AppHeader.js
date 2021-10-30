@@ -27,11 +27,10 @@ const AppHeader = () => {
 
     const mapToHeaderButton = (buttonInfo) => {
         return (
-            <Link to={buttonInfo.href}>
-            <div className={classes.HeaderMenuButton}>
+            //Link zostanie zastapione/zaprezentowany w postaci <a>
+            <Link to={buttonInfo.href} className={classes.HeaderMenuButton}>
                 {buttonInfo.icon}
                 <div>{buttonInfo.name}</div>
-            </div>
             </Link>
         )
     }
