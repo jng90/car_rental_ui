@@ -5,11 +5,24 @@ import {
     Switch,
     Route
 } from "react-router-dom";
+import AppContentHome from "./components/AppContent";
+import AppContentDatabase from "./components/AppContentDatabase";
+
 
 function App() {
     return (
         <div className={classes.App}>
-            <AppHeader/>
+            <Router>
+                <AppHeader/>
+                <Switch>
+                    <Route path={'/database'}>
+                        <AppContentDatabase/>
+                    </Route>
+                    <Route path={'/'}>
+                        <AppContentHome/>
+                    </Route>
+                </Switch>
+            </Router>
         </div>
     );
 }
