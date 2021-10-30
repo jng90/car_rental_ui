@@ -5,7 +5,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import AppContentHome from "./components/AppContent";
+import AppContentHome from "./components/AppContentHome";
 import AppContentDatabase from "./components/AppContentDatabase";
 
 
